@@ -71,6 +71,7 @@ function App() {
 
   const handleThemeCommand = (args: string) => {
     const [subCommand, themeName] = args.split(' ');
+    // console.log(`subCommand: ${subCommand}, themeName: ${themeName}`);
     
     if (subCommand === 'list') {
       return (
@@ -86,7 +87,13 @@ function App() {
       );
     }
 
-    const newTheme = themes[args];
+    let capitalizedThemeName = '' 
+    if (themeName) {
+      capitalizedThemeName = themeName.charAt(0).toUpperCase() + themeName.slice(1);
+    }
+
+    const fullThemeName = subCommand.toLowerCase() + capitalizedThemeName;
+    const newTheme = themes[fullThemeName];
     if (newTheme) {
       setCurrentTheme(newTheme);
       return `Theme changed to ${newTheme.name}`;
