@@ -5,6 +5,7 @@ import About from './commands/About';
 import Skills from './commands/Skills';
 import Projects from './commands/Projects';
 import Contact from './commands/Contact';
+import Loading from './Loading';
 import { themes } from './themes';
 
 type Command = {
@@ -25,7 +26,8 @@ function App() {
   const [input, setInput] = useState('');
   const [history, setHistory] = useState<Command[]>([]);
   const [currentPath] = useState('portfolio@yourdomain.com');
-  const [currentTheme, setCurrentTheme] = useState<Theme>(themes.default); 
+  const [currentTheme, setCurrentTheme] = useState<Theme>(themes.default);
+  const [loading, setLoading] = useState(true);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   const asciiArt = `
@@ -63,6 +65,7 @@ function App() {
 
   useEffect(() => {
     setHistory([welcomeMessage]);
+    setTimeout(() => setLoading(false), 2000);
   }, []);
 
   useEffect(() => {
@@ -131,6 +134,7 @@ function App() {
 
   return (
     <div className={`min-h-screen ${currentTheme.background} ${currentTheme.text} p-4 font-mono`}>
+      {loading ? (<Loading theme={currentTheme} text="Loading" />) :( 
       <div className="max-w-3xl mx-auto">
         <div className="mb-4">
           {history.map((entry, index) => (
@@ -157,6 +161,7 @@ function App() {
         </form>
         <div ref={bottomRef} />
       </div>
+      )}
     </div>
   );
 }

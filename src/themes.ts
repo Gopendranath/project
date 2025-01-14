@@ -72,4 +72,28 @@ export const themes: Record<string, Theme> = {
     path: "text-[#6699cc]",
     accent: "text-[#c594c5]",
   },
+  ubuntu: {
+    name: "Ubuntu",
+    background: "bg-[#2C001E]", // dark purple
+    text: "text-[#666666]", // medium gray
+    prompt: "text-[#888888]", // light gray
+    path: "text-[#AAAAAA]", // light gray-blue
+    accent: "text-[#FF9900]" // orange
+  },
+  kali: {
+    name: "Kali",
+    background: "bg-[#18171B]", // dark gray
+    text: "text-[#FFFFFF]", // white
+    prompt: "text-[#CCCCCC]", // light gray
+    path: "text-[#66CCCC]", // light blue
+    accent: "text-[#FF0000]" // red
+  },
+  arch: {
+    name: "Arch",
+    background: "bg-[#343A40]", // dark gray-blue
+    text: "text-[#FFFFFF]", // white
+    prompt: "text-[#AAAAAA]", // light gray
+    path: "text-[#66CCCC]", // light blue
+    accent: "text-[#34C759]" // green
+  },
 };
