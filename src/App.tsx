@@ -3,7 +3,7 @@ import { Terminal } from 'lucide-react';
 import Help from './commands/Help';
 import About from './commands/About';
 import Skills from './commands/Skills';
-import Projects from './commands/projects';
+import Projects from './commands/Projects';
 import Contact from './commands/Contact';
 import { themes } from './themes';
 
