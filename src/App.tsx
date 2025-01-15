@@ -25,7 +25,7 @@ type Theme = {
 function App() {
   const [input, setInput] = useState('');
   const [history, setHistory] = useState<Command[]>([]);
-  const [currentPath] = useState('portfolio@yourdomain.com');
+  const [currentPath] = useState('boowman888@gmail.com');
   const [currentTheme, setCurrentTheme] = useState<Theme>(themes.default);
   const [loading, setLoading] = useState(true);
   const bottomRef = useRef<HTMLDivElement>(null);
