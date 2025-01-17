@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="96px" height="96px"><path fill="#4caf50" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"/><path fill="#fff" d="M21,14h6v20h-6V14z"/><path fill="#fff" d="M14,21h20v6H14V21z"/></svg>
+<svg id='Programming Browser Code 1' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
+
+
+<g transform="matrix(1.43 0 0 1.43 12 12)" >
+<g style="" >
+<g transform="matrix(1 0 0 1 0 1.63)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-7, -8.63)" d="M 3.71266 13.0284 C 4.78221 13.1476 5.88037 13.25 7 13.25 C 8.11963 13.25 9.21779 13.1476 10.2873 13.0284 C 11.7273 12.8679 12.886 11.7092 13.0401 10.2685 C 13.1539 9.20502 13.25 8.11315 13.25 7 C 13.25 5.98032 13.1694 4.97852 13.0684 4 L 0.931622 4 C 0.830623 4.97852 0.75 5.98032 0.75 7 C 0.75 8.11315 0.846084 9.20502 0.959867 10.2685 C 1.114 11.7092 2.2727 12.8679 3.71266 13.0284 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 0 -4.63)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(148,233,134); fill-rule: nonzero; opacity: 1;" transform=" translate(-7, -2.38)" d="M 13.0684 4 L 0.931641 4 C 0.9409 3.91029 0.95033 3.82078 0.959886 3.73147 C 1.11402 2.29082 2.27272 1.13211 3.71267 0.971609 C 4.78222 0.852392 5.88039 0.75 7.00002 0.75 C 8.11965 0.75 9.21781 0.852392 10.2874 0.971609 C 11.7273 1.13211 12.886 2.29082 13.0402 3.73147 C 13.0497 3.82078 13.0591 3.91029 13.0684 4 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 -2.17 1.4)" >
+<path style="stroke: rgb(47,174,75); stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" transform=" translate(-4.83, -8.4)" d="M 3.82861 6.39792 L 5.83217 8.40148 L 3.82861 10.405" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 2.42 1.4)" >
+<path style="stroke: rgb(47,174,75); stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" transform=" translate(-9.42, -8.4)" d="M 8.07983 8.40146 L 10.7512 8.40146" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 0 0)" >
+<path style="stroke: rgb(47,174,75); stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" transform=" translate(-7, -7)" d="M 0.959867 10.2685 C 1.114 11.7092 2.2727 12.8679 3.71266 13.0284 C 4.78221 13.1476 5.88037 13.25 7 13.25 C 8.11963 13.25 9.21779 13.1476 10.2873 13.0284 C 11.7273 12.8679 12.886 11.7092 13.0401 10.2685 C 13.1539 9.20502 13.25 8.11315 13.25 7 C 13.25 5.88684 13.1539 4.79498 13.0401 3.73147 C 12.886 2.29082 11.7273 1.13211 10.2873 0.971609 C 9.21779 0.852392 8.11963 0.75 7 0.75 C 5.88037 0.75 4.78221 0.852392 3.71266 0.971609 C 2.2727 1.13211 1.114 2.29082 0.959867 3.73147 C 0.846083 4.79498 0.75 5.88684 0.75 7 C 0.75 8.11315 0.846084 9.20502 0.959867 10.2685 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 0 -4.63)" >
+<path style="stroke: rgb(47,174,75); stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" transform=" translate(-7, -2.38)" d="M 13.0684 4 L 0.931641 4 C 0.9409 3.91029 0.95033 3.82078 0.959886 3.73147 C 1.11402 2.29082 2.27272 1.13211 3.71267 0.971609 C 4.78222 0.852392 5.88039 0.75 7.00002 0.75 C 8.11965 0.75 9.21781 0.852392 10.2874 0.971609 C 11.7273 1.13211 12.886 2.29082 13.0402 3.73147 C 13.0497 3.82078 13.0591 3.91029 13.0684 4 Z" stroke-linecap="round" />
+</g>
+</g>
+</g>
+</svg>

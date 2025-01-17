@@ -1,4 +1,4 @@
-type Theme = {
+export type Theme = {
   name: string;
   background: string;
   text: string;

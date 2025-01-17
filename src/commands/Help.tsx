@@ -11,6 +11,7 @@ const Help = () => (
       <li>theme - Change the terminal theme (try: theme list, theme [name])</li>
       <li>clear - Clear the terminal</li>
       <li>help - Show this help message</li>
+      <li>gen - Generate content based on prompt (try: gen [prompt])</li>
     </ul>
   </div>
 );

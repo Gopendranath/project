@@ -6,6 +6,7 @@ import Skills from './commands/Skills';
 import Projects from './commands/Projects';
 import Contact from './commands/Contact';
 import Loading from './Loading';
+import Gen from './commands/Gen';
 import { themes } from './themes';
 
 type Command = {
@@ -24,6 +25,7 @@ type Theme = {
 
 function App() {
   const [input, setInput] = useState('');
+  const [promt, setPromt] = useState('');
   const [history, setHistory] = useState<Command[]>([]);
   const [currentPath] = useState('boowman888@gmail.com');
   const [currentTheme, setCurrentTheme] = useState<Theme>(themes.default);
@@ -61,6 +63,25 @@ function App() {
     skills: <Skills />,
     projects: <Projects currentTheme={currentTheme} />,
     contact: <Contact />,
+    gen: "Usage: gen [prompt]",
+  };
+
+  const handleGenCommand = (args: string) => {
+    const [subCommand, ...promt] = args.split(' ');
+
+    const mainPromt = promt.join(' ');
+
+    // console.log(`subCommand: ${subCommand}, mainPromt: ${mainPromt}, length: ${mainPromt.length} \n`);
+    // console.log('subCommand === gen: ', subCommand === 'gen','\n');
+    // console.log('mainPromt.length === 0: ', mainPromt.length == 0, '\n');
+    // console.log('mainPromt.length === 0 && subCommand === gen: ', mainPromt.length === 0 && subCommand === 'gen'); 
+
+    if (mainPromt.length !== 0 && subCommand === 'gen') {
+      return <Gen currentTheme={currentTheme} prompt={mainPromt} />;
+    }
+
+    return 'Usage: gen [prompt]';
+
   };
 
   useEffect(() => {
@@ -72,6 +93,7 @@ function App() {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [history]);
 
+
   const handleThemeCommand = (args: string) => {
     const [subCommand, themeName] = args.split(' ');
     // console.log(`subCommand: ${subCommand}, themeName: ${themeName}`);
@@ -81,8 +103,8 @@ function App() {
         <div className="mb-2">
           <p>Available themes:</p>
           <ul className="ml-4">
-            {Object.keys(themes).map((theme) => (
-              <li key={theme}>• {themes[theme].name}</li>
+            {Object.keys(themes).map((theme, index) => (
+              <li key={index}>• {themes[theme].name}</li>
             ))}
           </ul>
           <p className="mt-2">Usage: theme [name]</p>
@@ -113,6 +135,10 @@ function App() {
       setHistory([welcomeMessage]);
       return;
     }
+    
+    if (trimmedCmd.startsWith('gen')) {
+      output = handleGenCommand(trimmedCmd);
+    }
 
     if (trimmedCmd.startsWith('theme')) {
       const args = trimmedCmd.slice(6);
@@ -120,6 +146,7 @@ function App() {
     } else if (trimmedCmd in commands) {
       output = commands[trimmedCmd as keyof typeof commands];
     }
+
 
     setHistory((prev) => [...prev, { command: cmd, output }]);
   };
@@ -148,7 +175,7 @@ function App() {
             </div>
           ))}
         </div>
-        <form onSubmit={handleSubmit} className="flex items-center gap-2">
+        <form name='input' onSubmit={handleSubmit} className="flex items-center gap-2">
           <span className={currentTheme.path}>{currentPath}</span>
           <span className={currentTheme.prompt}>~$</span>
           <input
