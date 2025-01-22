@@ -1,4 +1,7 @@
+import React from "react";
 import { Theme } from "../themes";
+import { LoaderIcon } from "lucide-react";
+import useStore from "../Provider/useStore";
 
 interface GenProps {
   currentTheme: Theme;
@@ -6,16 +9,37 @@ interface GenProps {
 }
 
 export default function Gen({ currentTheme, prompt }: GenProps) {
+  const { responses, loading, error, fetchResponse } = useStore();
+
+  React.useEffect(() => {
+    if (prompt && !responses[prompt]) {
+      // Fetch response only if it hasn't been fetched for the current prompt
+      fetchResponse(prompt);
+    }
+  }, [prompt, fetchResponse, responses]);
+
   if (!prompt) {
-      return null;
+    return null;
   }
-  
+
+  const response = responses[prompt] || "";
+
   return (
-      <div className="mb-4">
-        <p>User: {prompt}</p>
-          <pre className={`${currentTheme.text} font-bold mb-4 text-xs sm:text-sm whitespace-pre-wrap`}>
-              {prompt} from AI
-          </pre>
-      </div>
+    <div className="mb-4" style={{ color: currentTheme.text }}>
+      <p>User: {prompt}</p>
+      <br />
+      <p>AI agent:</p>
+      <br />
+      {loading && !responses[prompt] ? (
+        <LoaderIcon
+          className="animate-spin"
+          style={{ position: "relative", left: "50%" }}
+        />
+      ) : error ? (
+        <p style={{ color: "red" }}>Error: {error}</p>
+      ) : (
+        <p dangerouslySetInnerHTML={{ __html: response }}></p>
+      )}
+    </div>
   );
 }

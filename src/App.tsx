@@ -9,6 +9,7 @@ import Loading from './Loading';
 import Gen from './commands/Gen';
 import { themes } from './themes';
 
+
 type Command = {
   command: string | JSX.Element;
   output: string | JSX.Element;
@@ -25,28 +26,23 @@ type Theme = {
 
 function App() {
   const [input, setInput] = useState('');
-  const [promt, setPromt] = useState('');
+  // const [promt, setPromt] = useState('');
   const [history, setHistory] = useState<Command[]>([]);
   const [currentPath] = useState('boowman888@gmail.com');
   const [currentTheme, setCurrentTheme] = useState<Theme>(themes.default);
   const [loading, setLoading] = useState(true);
   const bottomRef = useRef<HTMLDivElement>(null);
 
-  const asciiArt = `
-  ██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗ 
-  ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗
-  ██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║   ██║██║     ██║██║   ██║
-  ██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║██║     ██║██║   ██║
-  ██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝
-  ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝ 
-  `;
+  const imageOverlayStyle = {
+    filter: currentTheme.accent // Adjusts the color
+  }
 
   const welcomeMessage = {
     command: 'welcome',
     output: (
       <div className="mb-4">
-        <pre className={`${currentTheme.accent} font-bold mb-4 text-xs sm:text-sm whitespace-pre-wrap`}>
-          {asciiArt}
+        <pre className={`${currentTheme.accent} font-bold mb-4 text-xs sm:text-sm whitespace-pre-wrap ascii-art`}>
+          <img src="./ascii_art_transparent.png" alt="ascii_art" style={imageOverlayStyle} />
         </pre>
         <div className={`flex items-center gap-2 ${currentTheme.text} font-bold`}>
           <Terminal size={24} />
@@ -74,9 +70,10 @@ function App() {
     // console.log(`subCommand: ${subCommand}, mainPromt: ${mainPromt}, length: ${mainPromt.length} \n`);
     // console.log('subCommand === gen: ', subCommand === 'gen','\n');
     // console.log('mainPromt.length === 0: ', mainPromt.length == 0, '\n');
-    // console.log('mainPromt.length === 0 && subCommand === gen: ', mainPromt.length === 0 && subCommand === 'gen'); 
+    // console.log('mainPromt.length === 0 && subCommand === gen: ', mainPromt.length === 0 && subCommand === 'gen');
 
     if (mainPromt.length !== 0 && subCommand === 'gen') {
+      console.log('mainPromt: ', mainPromt);
       return <Gen currentTheme={currentTheme} prompt={mainPromt} />;
     }
 
@@ -160,7 +157,7 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen ${currentTheme.background} ${currentTheme.text} p-4 font-mono`}>
+    <div className={`min-h-screen ${currentTheme.background} ${currentTheme.text} p-4 font-mono `}>
       {loading ? (<Loading theme={currentTheme} text="Loading" />) :( 
       <div className="max-w-3xl mx-auto">
         <div className="mb-4">

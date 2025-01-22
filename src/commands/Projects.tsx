@@ -158,7 +158,7 @@ const Projects = (props: any) => {
               .filter((project) => project.type === type)
               .map((project, index) => (
                 <li key={index}>
-                  <span className={currentTheme.text}>{project.name}</span> -{" "}
+                  <span className={`${currentTheme.text} font-[900]`}>{'> '} {project.name}</span> -{" "}
                   {project.description}
                   {project.website && (
                     <>

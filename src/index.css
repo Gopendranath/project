@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width:none;
+}
+
+html, body {
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background-color: #1a1a1a;
+
+}
+
 body {
   margin: 0;
   font-family: 'Fira Code', monospace;
@@ -25,4 +42,37 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #5a5a5a;
+}
+
+.ascii-art {
+  font-size: 16px; /* Default font size */
+}
+
+@media (max-width: 768px) {
+  .ascii-art {
+    font-size: 12px; /* Font size for small screens */
+  }
+}
+
+@media (max-width: 530px) {
+  .ascii-art {
+    font-size: 2.03vw; /* Font size for very small screens */
+  }
+}
+
+.tooltip {
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px 8px;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tooltip:hover {
+  opacity: 1;
+  visibility: visible;
 }
