@@ -12,6 +12,7 @@ const Help = () => (
       <li>{'>'} clear - Clear the terminal</li>
       <li>{'>'} help - Show this help message</li>
       <li>{'>'} gen - Generate content based on prompt (try: gen [prompt])</li>
+      <li>{'>'} imagine - Generate an image based on prompt (try: imagine [prompt])</li>
     </ul>
   </div>
 );

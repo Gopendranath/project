@@ -13,7 +13,7 @@ export default function Gen({ currentTheme, prompt }: GenProps) {
 
   React.useEffect(() => {
     if (prompt && !responses[prompt]) {
-      // Fetch response only if it hasn't been fetched for the current prompt
+
       fetchResponse(prompt);
     }
   }, [prompt, fetchResponse, responses]);

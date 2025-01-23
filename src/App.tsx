@@ -7,6 +7,7 @@ import Projects from './commands/Projects';
 import Contact from './commands/Contact';
 import Loading from './Loading';
 import Gen from './commands/Gen';
+import Imagine from './commands/Imagine';
 import { themes } from './themes';
 
 
@@ -60,6 +61,20 @@ function App() {
     projects: <Projects currentTheme={currentTheme} />,
     contact: <Contact />,
     gen: "Usage: gen [prompt]",
+    imagine: "Usage: imagine [prompt]",
+  };
+
+  const handleImagineCommand = (args: string) => {
+    const [subCommand, ...promt] = args.split(' ');
+
+    const mainPromt = promt.join(' ');
+
+    if (mainPromt.length !== 0 && subCommand === 'imagine') {
+      console.log('mainPromt: ', mainPromt);
+      return <Imagine currentTheme={currentTheme} prompt={mainPromt} />;
+    }
+
+    return 'Usage: imagine [prompt]';
   };
 
   const handleGenCommand = (args: string) => {
@@ -131,6 +146,10 @@ function App() {
     if (trimmedCmd === 'clear') {
       setHistory([welcomeMessage]);
       return;
+    }
+
+    if (trimmedCmd.startsWith('imagine')) {
+      output = handleImagineCommand(trimmedCmd);
     }
     
     if (trimmedCmd.startsWith('gen')) {

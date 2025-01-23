@@ -1,0 +1,10 @@
+{
+  "imageId": "107869",
+  "prompt": "A banana with white background",
+  "_id": "679188747ac313283c6b36b9",
+  "__v": 0
+}
+
+{
+  "imageUrl": "https://tmp.starryai.com/api/107869/206e8ae9-61c9-4065-9a09-8815f17febc1.png"
+}
