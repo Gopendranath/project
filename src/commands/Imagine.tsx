@@ -31,7 +31,7 @@ const Imagine = ({ currentTheme, prompt }: ImagineProps) => {
       <br />
       {loading && !responses[prompt] ? (
         <Skeleton
-          sx={{ bgcolor: "green.500" }}
+          sx={{ bgcolor: "grey.900" }}
           variant="rectangular"
           width={512}
           height={512}
