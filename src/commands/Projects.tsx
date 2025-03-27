@@ -1,4 +1,4 @@
-import React from "react";
+
 
 interface Project {
   name: string;
@@ -9,11 +9,25 @@ interface Project {
 }
 const projects: Project[] = [
   {
+    name: "Ecommerce",
+    type: "Web",
+    description: "A responsive e-commerce website with MERN stack",
+    website: "https://e-com-admin-three.vercel.app/add",
+    github: "https://github.com/Gopendranath/E.COM",
+  },
+  {
     name: "Gemini clone",
     type: "Web",
     description: "A clone of Google's Gemini AI interface built with React and modern web technologies",
     website: "https://clone-gemini-v1.netlify.app/",
     github: "https://github.com/Gopendranath/GeminiClone",
+  },
+  {
+    name: "Fullstack Auth",
+    type: "Web",
+    description: "Complete authentication system with JWT, includes both frontend and backend implementation",
+    website: "https://authentication-clone.onrender.com",
+    github: "https://github.com/Gopendranath/Authentication-Clone",
   },
   {
     name: "Todo-Reactapp",
@@ -23,11 +37,11 @@ const projects: Project[] = [
     github: "https://github.com/Gopendranath/React-Todo",
   },
   {
-    name: "Fullstack Auth",
+    name: "Admin Dashboard",
     type: "Web",
-    description: "Complete authentication system with JWT, includes both frontend and backend implementation",
-    website: "https://authentication-clone.onrender.com",
-    github: "https://github.com/Gopendranath/Authentication-Clone",
+    description: "A responsive admin dashboard built with React and Material UI",
+    website: "https://admin-dashboard-ur6j.onrender.com",
+    github: "https://github.com/Gopendranath/Admin_dashBoard",
   },
   {
     name: "Python Snakegame",
@@ -90,7 +104,7 @@ const projects: Project[] = [
     github: "https://github.com/Gopendranath/python_Calculator",
   },
   {
-    name: "Python-Tict-act-oe",
+    name: "Python-Tic-tac-toe",
     type: "Python",
     description: "Tic-Tac-Toe game in Python.",
     github: "https://github.com/Gopendranath/python_Tic-Tac-Toe",
