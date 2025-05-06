@@ -51,7 +51,7 @@ const About = () => {
         love creating elegant solutions to complex problems.
       </p>
       <div className="mt-4">
-        <p className="text-xl font-semibold mb-3">CV : <a href="https://drive.google.com/file/d/10vKlRCWoKyuNM8Ul0D7x8dUFARxxXIau/view?usp=sharing">View</a></p>
+        <p className="text-xl font-semibold mb-3">CV : <a href="https://drive.google.com/file/d/1F8SKv7iUG5vc6J9EgjdIUPC2q9knUSQw/view?usp=drive_link">View</a></p>
       </div>
     </div>
   );
