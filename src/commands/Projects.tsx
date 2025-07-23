@@ -9,11 +9,25 @@ interface Project {
 }
 const projects: Project[] = [
   {
-    name: "Ecommerce",
+    name: "Ecommerce AJIO Fullstack",
     type: "Web",
     description: "A responsive e-commerce website with MERN stack",
-    website: "https://e-com-admin-three.vercel.app/add",
-    github: "https://github.com/Gopendranath/E.COM",
+    website: "https://ajio-frontend-blush.vercel.app/",
+    github: "https://github.com/Gopendranath/Ajio-frontend",
+  },
+  {
+    name: "Meet Connect",
+    type: "Web",
+    description: "A Fullstack Nextjs website for meetings and recordings",
+    website: "https://meet-connect-eta.vercel.app/",
+    github: "https://github.com/Gopendranath/Meet-connect",
+  },
+  {
+    name: "Ecommerce Wallmart frontend",
+    type: "Web",
+    description: "An e-commerce website frontend with React and Auth0",
+    website: "https://walmart-v1.vercel.app/",
+    github: "https://github.com/Gopendranath/Walmart_v1",
   },
   {
     name: "Gemini clone",
@@ -65,19 +79,13 @@ const projects: Project[] = [
     name: "Blogpost backend",
     type: "Web",
     description: "Backend for a blog post application.",
-    github: "https://github.com/yourusername/blogpost-backend",
+    github: "https://github.com/Gopendranath/Blog_posting_site",
   },
   {
     name: "xAI-chat backend",
     type: "Web",
     description: "Backend for an xAI chat application.",
     github: "https://github.com/Gopendranath/xAi-test",
-  },
-  {
-      name:"Mui-Socialmedia",
-      type:"Web",
-      description:"Social media application built with MUI.",
-      github:"https://github.com/yourusername/mui-socialmedia",
   },
   {
       name:"Logo-viewer",

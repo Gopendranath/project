@@ -1,9 +1,10 @@
 import React from "react";
 import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaLinux, FaWindows, FaPython, FaHtml5, FaCss3, FaMicrochip, FaWifi } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiGit, SiDocker, SiExpress, 
-         SiBootstrap, SiMui, SiPostman, SiApachekafka, SiNextdotjs, SiSocketdotio, 
-         SiArduino, SiJavascript,
+         SiBootstrap, SiMui, SiPostman, SiApachekafka, SiNextdotjs, SiSocketdotio,  SiLangchain, SiFastapi, SiGraphql, 
+         SiArduino, SiJavascript, SiN8N, SiVercel, SiNetlify,
          SiEspressif} from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 const skills = [
   // Frontend
@@ -20,6 +21,7 @@ const skills = [
   { name: "Shadcn/ui", icon: <FaReact />, rating: 3, category: "Frontend" },
   { name: "Bootstrap", icon: <SiBootstrap />, rating: 4, category: "Frontend" },
   { name: "Tailwind CSS", icon: <SiTailwindcss />, rating: 3, category: "Frontend" },
+  { name: "React Redux", icon: <FaReact />, rating: 3, category: "Frontend" },
 
   // Backend
   { name: "Node.js", icon: <FaNodeJs />, rating: 4, category: "Backend" },
@@ -30,6 +32,10 @@ const skills = [
   { name: "Socket.io", icon: <SiSocketdotio />, rating: 2, category: "Backend" },
   { name: "Authentication", icon: <FaNodeJs />, rating: 4, category: "Backend" },
   { name: "Authorization", icon: <FaNodeJs />, rating: 3, category: "Backend" },
+  { name: "REST API", icon: <FaNodeJs />, rating: 4, category: "Backend" },
+  { name: "GraphQL", icon: <SiGraphql />, rating: 3, category: "Backend" },
+  { name: "FastAPI", icon: <SiFastapi />, rating: 3, category: "Backend" },
+  { name: "OAuth2", icon: <FaNodeJs />, rating: 2, category: "Backend" },
 
   // Database
   { name: "MongoDB", icon: <SiMongodb />, rating: 3, category: "Database" },
@@ -37,6 +43,7 @@ const skills = [
   { name: "PostgreSQL", icon: <SiPostgresql />, rating: 3, category: "Database" },
 
   // DevOps & Tools
+  { name: "Aws" , icon: <FaAws />, rating: 3, category: "DevOps" },
   { name: "Git", icon: <SiGit />, rating: 4, category: "DevOps" },
   { name: "GitHub", icon: <FaGithub />, rating: 3, category: "DevOps" },
   { name: "Docker", icon: <SiDocker />, rating: 2, category: "DevOps" },
@@ -44,6 +51,9 @@ const skills = [
   { name: "Postman", icon: <SiPostman />, rating: 2, category: "DevOps" },
   { name: "Bash", icon: <FaLinux />, rating: 4, category: "DevOps" },
   { name: "WSL", icon: <FaWindows />, rating: 3, category: "DevOps" },
+  { name: "n8n", icon: <SiN8N />, rating: 3, category: "DevOps" },
+  { name: "Vercel", icon: <SiVercel />, rating: 4, category: "DevOps" },
+  { name: "Netlify", icon: <SiNetlify />, rating: 3, category: "DevOps" },
 
   // Python & Others
   { name: "Python", icon: <FaPython />, rating: 4, category: "Python" },
@@ -53,6 +63,7 @@ const skills = [
   { name: "System Design", icon: <FaDatabase />, rating: 3, category: "Others" },
   { name: "Computer Networks", icon: <FaDatabase />, rating: 4, category: "Others" },
   { name: "GenAI", icon: <FaDatabase />, rating: 3, category: "Others" },
+  { name: "Langchain", icon: <SiLangchain />, rating: 3, category: "Others" },
 
   // Add new Hardware category
   { name: "Arduino", icon: <SiArduino />, rating: 4, category: "Hardware" },

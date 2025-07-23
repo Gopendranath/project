@@ -78,7 +78,7 @@ export const themes: Record<string, Theme> = {
     text: "text-[#666666]", // medium gray
     prompt: "text-[#888888]", // light gray
     path: "text-[#AAAAAA]", // light gray-blue
-    accent: "text-[#FF9900]" // orange
+    accent: "text-[#FF9900]", // orange
   },
   kali: {
     name: "Kali",
@@ -86,7 +86,7 @@ export const themes: Record<string, Theme> = {
     text: "text-[#FFFFFF]", // white
     prompt: "text-[#CCCCCC]", // light gray
     path: "text-[#66CCCC]", // light blue
-    accent: "text-[#FF0000]" // red
+    accent: "text-[#FF0000]", // red
   },
   arch: {
     name: "Arch",
@@ -94,6 +94,14 @@ export const themes: Record<string, Theme> = {
     text: "text-[#FFFFFF]", // white
     prompt: "text-[#AAAAAA]", // light gray
     path: "text-[#66CCCC]", // light blue
-    accent: "text-[#34C759]" // green
+    accent: "text-[#34C759]", // green
+  },
+  light: {
+    name: "Light",
+    background: "bg-white", // clean white background
+    text: "text-gray-800", // dark text for readability
+    prompt: "text-blue-600", // standout prompt color
+    path: "text-green-600", // slightly soft green
+    accent: "text-purple-600", // nice purple accent
   },
 };

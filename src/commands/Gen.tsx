@@ -28,8 +28,6 @@ export default function Gen({ currentTheme, prompt }: GenProps) {
     <div className="mb-4" style={{ color: currentTheme.text }}>
       <p>User: {prompt}</p>
       <br />
-      <p>AI agent:</p>
-      <br />
       {loading && !responses[prompt] ? (
         <LoaderIcon
           className="animate-spin"
