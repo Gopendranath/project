@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const About = () => {
   const [text, setText] = useState("");
@@ -51,7 +51,7 @@ const About = () => {
         love creating elegant solutions to complex problems.
       </p>
       <div className="mt-4">
-        <p className="text-xl font-semibold mb-3">CV : <a href="https://drive.google.com/file/d/1B_DsnTb6GviEg4q5ztvJ62y5OD2ffn5S/view?usp=drive_link">View</a></p>
+        <p className="text-xl font-semibold mb-3">CV : <a href="https://drive.google.com/file/d/13Yb6UZ2WecqJX5ETmbrT7K1KZ-OkFmCe/view?usp=sharing">View</a></p>
       </div>
     </div>
   );
