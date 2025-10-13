@@ -26,7 +26,7 @@ const projects: Project[] = [
     name: "Ecommerce Wallmart frontend",
     type: "Web",
     description: "An e-commerce website frontend with React and Auth0",
-    website: "https://walmart-v1.vercel.app/",
+    website: "https://walmart-clone-almax.vercel.app/",
     github: "https://github.com/Gopendranath/Walmart_v1",
   },
   {
@@ -133,7 +133,7 @@ const projects: Project[] = [
       name:"python screensaver",
       type:"Python",
       description:"Simple screensaver.",
-      github:"https://github.com/yourusername/python-screensaver",
+      github:"https://github.com/Gopendranath/python-screensaver",
   },
    {
       name:"Tinder-copybootstrap",
