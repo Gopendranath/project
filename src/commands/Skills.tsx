@@ -1,7 +1,6 @@
-import React from "react";
 import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaLinux, FaWindows, FaPython, FaHtml5, FaCss3, FaMicrochip, FaWifi } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiGit, SiDocker, SiExpress, 
-         SiBootstrap, SiMui, SiPostman, SiApachekafka, SiNextdotjs, SiSocketdotio,  SiLangchain, SiFastapi, SiGraphql, 
+         SiBootstrap, SiMui, SiPostman, SiNextdotjs, SiSocketdotio,  SiLangchain, SiFastapi, SiGraphql, 
          SiArduino, SiJavascript, SiN8N, SiVercel, SiNetlify,
          SiEspressif} from "react-icons/si";
 import { FaAws } from "react-icons/fa";

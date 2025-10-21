@@ -40,6 +40,14 @@ export const themes: Record<string, Theme> = {
     path: "text-[#81a1c1]",
     accent: "text-[#5e81ac]",
   },
+    gruvbox: {
+    name: "Gruvbox",
+    background: "bg-[#282828]",
+    text: "text-[#ebdbb2]",
+    prompt: "text-[#fe8019]",
+    path: "text-[#fabd2f]",
+    accent: "text-[#b8bb26]",
+  },
   solarizedDark: {
     name: "Solarized Dark",
     background: "bg-[#002b36]",
@@ -55,14 +63,6 @@ export const themes: Record<string, Theme> = {
     prompt: "text-[#b58900]",
     path: "text-[#268bd2]",
     accent: "text-[#2aa198]",
-  },
-  gruvbox: {
-    name: "Gruvbox",
-    background: "bg-[#282828]",
-    text: "text-[#ebdbb2]",
-    prompt: "text-[#fe8019]",
-    path: "text-[#fabd2f]",
-    accent: "text-[#b8bb26]",
   },
   oceanicNext: {
     name: "Oceanic Next",

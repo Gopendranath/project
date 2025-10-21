@@ -10,6 +10,11 @@ interface TerminalLoaderProps {
   text?: string;
 }
 
+interface TerminalLoaderStyles {
+  terminalLoader: React.CSSProperties;
+  dots: React.CSSProperties;
+}
+
 const TerminalLoader: React.FC<TerminalLoaderProps> = ({ theme, text = "Loading" }) => {
   const [dots, setDots] = useState('');
 
@@ -24,26 +29,25 @@ const TerminalLoader: React.FC<TerminalLoaderProps> = ({ theme, text = "Loading"
     return () => clearInterval(interval);
   }, []);
 
+  const styles: TerminalLoaderStyles = {
+    terminalLoader: {
+      fontFamily: 'monospace',
+      fontSize: '1.2rem',
+      letterSpacing: '0.1em',
+    },
+    dots: {
+      display: 'inline-block',
+      minWidth: '30px',
+      textAlign: 'left',
+    },
+  };
+
   return (
     <div className={`min-h-screen ${theme.background} ${theme.text} flex items-center justify-center`}>
-      <div className="terminal-loader">
+      <div className="terminal-loader" style={styles.terminalLoader}>
         <span className="text">{text}</span>
-        <span className="dots">{dots}</span>
+        <span className="dots" style={styles.dots}>{dots}</span>
       </div>
-
-      <style jsx>{`
-        .terminal-loader {
-          font-family: monospace;
-          font-size: 1.2rem;
-          letter-spacing: 0.1em;
-        }
-
-        .dots {
-          display: inline-block;
-          min-width: 30px;
-          text-align: left;
-        }
-      `}</style>
     </div>
   );
 };

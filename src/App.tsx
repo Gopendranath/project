@@ -29,7 +29,7 @@ function App() {
   const [input, setInput] = useState('');
   // const [promt, setPromt] = useState('');
   const [history, setHistory] = useState<Command[]>([]);
-  const [currentPath] = useState('boowman888@gmail.com');
+  const [currentPath] = useState('gopendra@Ubuntu:');
   const [currentTheme, setCurrentTheme] = useState<Theme>(themes.default);
   const [loading, setLoading] = useState(true);
   const bottomRef = useRef<HTMLDivElement>(null);
