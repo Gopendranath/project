@@ -9,6 +9,13 @@ interface Project {
 }
 const projects: Project[] = [
   {
+    name:"Lovable Vibe",
+    type: "Web",
+    description: "A full stack vibe coding platform",
+    website: "https://lovable-vibe.vercel.app/",
+    github: "https://github.com/Gopendranath/lovable-vibe"
+  },
+  {
     name: "Ecommerce AJIO Fullstack",
     type: "Web",
     description: "A responsive e-commerce website with MERN stack",
